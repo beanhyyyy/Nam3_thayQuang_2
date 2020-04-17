@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.tubean.eureka</groupId>
-    <artifactId>server</artifactId>
+    <artifactId>vna-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server</name>
-    <description>Demo MSA project for Spring Boot with Eureka server</description>
+    <name>zuul-server</name>
+    <description>Demo MAS project for Spring Boot with Zuul and Eureka</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -26,9 +26,12 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

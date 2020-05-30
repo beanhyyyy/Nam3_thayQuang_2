@@ -21,7 +21,7 @@ public class BookingController {
 	@Autowired
 	private Environment env;
 	
-	//vja-gateway
+	//vna-gateway
 	@RequestMapping("/")
 	public String home() {
 		// This is useful for debugging
@@ -37,8 +37,8 @@ public class BookingController {
 		bookingEntity.setId(id);
 		
 		// get list of available images 
-		List<Object> images = restTemplate.getForObject("http://image-service/images/", List.class);
-		bookingEntity.setImages(images);
+		List<Object> imagesVNA = restTemplate.getForObject("http://image-service/imagesVNA/", List.class);
+		bookingEntity.setImages(imagesVNA);
 		
 		
 		return bookingEntity;
@@ -60,8 +60,8 @@ public class BookingController {
 		BookingEntity bookingEntity = new BookingEntity();
 
 		// get list of available images 
-		List<Object> images = restTemplate.getForObject("http://image-service/images/", List.class);
-		bookingEntity.setImages(images);
+		List<Object> imagesVNA = restTemplate.getForObject("http://image-service/imagesVNA/", List.class);
+		bookingEntity.setImages(imagesVNA);
 		return bookingEntity;
 
 	}

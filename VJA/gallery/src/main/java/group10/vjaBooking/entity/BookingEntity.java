@@ -4,11 +4,11 @@ import java.util.List;
 
 public class BookingEntity {
     private Integer id;
-    private List<Object> images;
+    private List<Object> imagesVJA;
 
-    public BookingEntity(Integer id, List<Object> images) {
+    public BookingEntity(Integer id, List<Object> imagesVJA) {
         this.id = id;
-        this.images = images;
+        this.imagesVJA = imagesVJA;
     }
 
     public BookingEntity() {
@@ -23,10 +23,10 @@ public class BookingEntity {
     }
 
     public List<Object> getImages() {
-        return images;
+        return imagesVJA;
     }
 
     public void setImages(List<Object> images) {
-        this.images = images;
+        this.imagesVJA = images;
     }
 }

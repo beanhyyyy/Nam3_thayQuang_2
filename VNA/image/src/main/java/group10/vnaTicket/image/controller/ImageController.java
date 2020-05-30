@@ -35,12 +35,12 @@ public class ImageController {
 	//      "embe": 1
 	//}
 	// Nhap dai du~ lieu..tam` 15 20 dong`..j cung dc..
-	@RequestMapping("/images")
+	@RequestMapping("/imagesVNA")
 	public List<ImageEntity> getImages() {
-		List<ImageEntity> imageEntities = Arrays.asList(
-			new ImageEntity(1,"VJA" ,"10/4/2020", "15/4/2020", "SGN", "HAN", 2, 2, 1),
-			new ImageEntity(2,"VJA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1),
-			new ImageEntity(3,"VNA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1));
-		return imageEntities;
+		List<ImageEntity> imageEntitiesVNA = Arrays.asList(
+			new ImageEntity(1,"VNA" ,"10/4/2020", "15/4/2020", "SGN", "HAN", 2, 2, 1),
+			new ImageEntity(2,"VNA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1),
+			new ImageEntity(3,"VNA","10/4/2020", "15/4/2020", "SGN2", "HAN", 2, 2, 1));
+		return imageEntitiesVNA;
 	}
 }

@@ -1,14 +1,14 @@
-package group10.vnaBooking.entity;
+package group10.vjaBooking.entity;
 
 import java.util.List;
 
 public class BookingEntity {
     private Integer id;
-    private List<Object> imagesVNA;
+    private List<Object> images;
 
-    public BookingEntity(Integer id, List<Object> imagesVNA) {
+    public BookingEntity(Integer id, List<Object> images) {
         this.id = id;
-        this.imagesVNA = imagesVNA;
+        this.images = images;
     }
 
     public BookingEntity() {
@@ -23,10 +23,10 @@ public class BookingEntity {
     }
 
     public List<Object> getImages() {
-        return imagesVNA;
+        return images;
     }
 
     public void setImages(List<Object> images) {
-        this.imagesVNA = images;
+        this.images = images;
     }
 }

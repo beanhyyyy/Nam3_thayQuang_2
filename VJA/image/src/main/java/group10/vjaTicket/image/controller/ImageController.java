@@ -26,6 +26,7 @@ public class ImageController {
 	
 	//{	    
 	// id
+	//		"hangbay": VJA
 	//      "ngaydi": "10/4/2020",
 	//      "ngayve": "15/4/2020",
 	//     "noidi": "SGN",
@@ -35,12 +36,12 @@ public class ImageController {
 	//      "embe": 1
 	//}
 	// Nhap dai du~ lieu..tam` 15 20 dong`..j cung dc..
-	@RequestMapping("/images")
+	@RequestMapping("/imagesVJA")
 	public List<ImageEntity> getImages() {
-		List<ImageEntity> imageEntities = Arrays.asList(
+		List<ImageEntity> imageEntitiesVJA = Arrays.asList(
 			new ImageEntity(1,"VJA" ,"10/4/2020", "15/4/2020", "SGN", "HAN", 2, 2, 1),
 			new ImageEntity(2,"VJA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1),
-			new ImageEntity(3,"VNA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1));
-		return imageEntities;
+			new ImageEntity(3,"VJA","10/4/2020", "15/4/2020", "SGN1", "HAN", 2, 2, 1));
+		return imageEntitiesVJA;
 	}
 }

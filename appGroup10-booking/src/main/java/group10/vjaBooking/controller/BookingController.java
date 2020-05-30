@@ -31,15 +31,15 @@ public class BookingController {
 		return "Hello from Gallery Service running at port: " + env.getProperty("local.server.port");
 	} 
 	
-	@RequestMapping("/{id}/{hangbay}/{ngaydi}/{ngayve}/{noidi}/{noiden}/{nguoilon}/{treem}/{embe}") 
+	@RequestMapping("/{id}/{hangbay}/{ngaydi}/{ngayve}/{noidi}/{noiden}/{nguoilon}/{treem}/{embe}") // booking qua // sua ten class,vja.booking. // sua boot VNA 9
 	public BookingEntity getGallery(@PathVariable final int id, @PathVariable final String hangbay, @PathVariable final String ngaydi, @PathVariable final String ngayve, @PathVariable final String noidi, @PathVariable final String noiden, @PathVariable final int nguoilon, @PathVariable final int treem, @PathVariable final int embe) {
 		// create gallery object
 		BookingEntity bookingEntity = new BookingEntity();
 		bookingEntity.setId(id);
 		
 		// get list of available images 
-		List<Object> imagesVJA = restTemplate.getForObject("http://image-service/imagesVJA/", List.class);
-		bookingEntity.setImages(imagesVJA);
+		List<Object> images = restTemplate.getForObject("http://image-service/images/", List.class);
+		bookingEntity.setImages(images);
 		
 		
 		return bookingEntity;
@@ -61,13 +61,11 @@ public class BookingController {
 		BookingEntity bookingEntity = new BookingEntity();
 
 		// get list of available images 
-		List<Object> imagesVJA = restTemplate.getForObject("http://image-service/imagesVJA/", List.class);
-		bookingEntity.setImages(imagesVJA);
+		List<Object> images = restTemplate.getForObject("http://image-service/images/", List.class);
+		bookingEntity.setImages(images);
 		return bookingEntity;
 
 	}
-	
-	
 	
 	
 	

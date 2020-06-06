@@ -1,0 +1,10 @@
+Lấy dữ liệu vé bay ở VJA : http://localhost:9762/vja/tickets
+
+Lấy dữ liệu vé bay ở VNA : http://localhost:7762/vna/tickets
+
+Lấy dữ liệu vé bay từ server của cả 2 hãng : http://localhost:8100/ticket/vna,vja
+
+Lấy dữ liệu vé bay từ server của 1 hãng : http://localhost:8100/ticket/vna
+
+Lấy dữ liệu vé bay từ server của 1 hãng : http://localhost:8100/ticket/vja
+
